@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ⌘英かな
+//  cmd-eikana
 //
 //  MIT License
 //  Copyright (c) 2016 iMasanari
@@ -59,15 +59,18 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             if isNewVer == nil {
                 let alert = NSAlert()
                 
-                alert.messageText = "通信に失敗しました"
-                alert.informativeText = "時間をおいて試してください"
+                // alert.messageText = "通信に失敗しました"
+                alert.messageText = "Communication Failed"
+                // alert.informativeText = "時間をおいて試してください"
+                alert.informativeText = "Please wait a while and try it."
                 
                 alert.runModal()
             }
             else if isNewVer == false {
                 let alert = NSAlert()
                 
-                alert.messageText = "最新バージョンです"
+                // alert.messageText = "最新バージョンです"
+                alert.messageText = "It is the latest version"
                 let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
                 alert.informativeText = "ver.\(version)"
                 

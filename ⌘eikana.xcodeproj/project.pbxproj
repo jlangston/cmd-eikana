@@ -24,7 +24,7 @@
 		6294281D1D387503001BD4E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294281C1D387503001BD4E9 /* ViewController.swift */; };
 		6294281F1D387503001BD4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6294281E1D387503001BD4E9 /* Assets.xcassets */; };
 		629428221D387503001BD4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629428201D387503001BD4E9 /* Main.storyboard */; };
-		6294282D1D387503001BD4E9 /* ⌘英かなTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294282C1D387503001BD4E9 /* ⌘英かなTests.swift */; };
+		6294282D1D387503001BD4E9 /* ⌘eikanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294282C1D387503001BD4E9 /* ⌘eikanaTests.swift */; };
 		62BEA2A41DA739B6004409AE /* ShortcutsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BEA2A31DA739B6004409AE /* ShortcutsController.swift */; };
 		62D162E71D3B350B009C95B0 /* toggleLaunchAtStartup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D162E61D3B350B009C95B0 /* toggleLaunchAtStartup.swift */; };
 		62FE51611DC70C5B0037B8D1 /* ExclusionAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE51601DC70C5B0037B8D1 /* ExclusionAppsController.swift */; };
@@ -70,14 +70,14 @@
 		624BF4C91DD182F500A70E2C /* MediaKeyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaKeyEvent.swift; sourceTree = "<group>"; };
 		627265F51D3CC84000703F85 /* KeyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyEvent.swift; sourceTree = "<group>"; };
 		628908ED1DADB0B6008EF46A /* KeyMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyMapping.swift; sourceTree = "<group>"; };
-		629428171D387503001BD4E9 /* ⌘英かな.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "⌘英かな.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629428171D387503001BD4E9 /* ⌘英かな.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "⌘英かな.app"; path = "⌘eikana.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6294281A1D387503001BD4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6294281C1D387503001BD4E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6294281E1D387503001BD4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		629428211D387503001BD4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		629428231D387503001BD4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		629428281D387503001BD4E9 /* ⌘英かな.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "⌘英かな.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6294282C1D387503001BD4E9 /* ⌘英かなTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "⌘英かなTests.swift"; sourceTree = "<group>"; };
+		6294282C1D387503001BD4E9 /* ⌘eikanaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "⌘eikanaTests.swift"; sourceTree = "<group>"; };
 		6294282E1D387503001BD4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62BEA2A31DA739B6004409AE /* ShortcutsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutsController.swift; sourceTree = "<group>"; };
 		62D162E61D3B350B009C95B0 /* toggleLaunchAtStartup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toggleLaunchAtStartup.swift; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 		6294280E1D387503001BD4E9 = {
 			isa = PBXGroup;
 			children = (
-				629428191D387503001BD4E9 /* ⌘英かな */,
-				6294282B1D387503001BD4E9 /* ⌘英かなTests */,
+				629428191D387503001BD4E9 /* ⌘eikana */,
+				6294282B1D387503001BD4E9 /* ⌘eikanaTests */,
 				620E0B411D9F2F8F0067F88B /* cmd-eikana-helper */,
 				629428181D387503001BD4E9 /* Products */,
 			);
@@ -151,7 +151,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		629428191D387503001BD4E9 /* ⌘英かな */ = {
+		629428191D387503001BD4E9 /* ⌘eikana */ = {
 			isa = PBXGroup;
 			children = (
 				6294281A1D387503001BD4E9 /* AppDelegate.swift */,
@@ -172,17 +172,17 @@
 				6242D4BD1DA395AC00CA80DD /* KeyTextField.swift */,
 				629428231D387503001BD4E9 /* Info.plist */,
 			);
-			name = "⌘英かな";
+			name = "⌘eikana";
 			path = "cmd-eikana";
 			sourceTree = "<group>";
 		};
-		6294282B1D387503001BD4E9 /* ⌘英かなTests */ = {
+		6294282B1D387503001BD4E9 /* ⌘eikanaTests */ = {
 			isa = PBXGroup;
 			children = (
-				6294282C1D387503001BD4E9 /* ⌘英かなTests.swift */,
+				6294282C1D387503001BD4E9 /* ⌘eikanaTests.swift */,
 				6294282E1D387503001BD4E9 /* Info.plist */,
 			);
-			name = "⌘英かなTests";
+			name = "⌘eikanaTests";
 			path = "cmd-eikanaTests";
 			sourceTree = "<group>";
 		};
@@ -272,9 +272,9 @@
 					};
 				};
 			};
-			buildConfigurationList = 629428121D387503001BD4E9 /* Build configuration list for PBXProject "⌘英かな" */;
+			buildConfigurationList = 629428121D387503001BD4E9 /* Build configuration list for PBXProject "⌘eikana" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = eikana;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -355,7 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6294282D1D387503001BD4E9 /* ⌘英かなTests.swift in Sources */,
+				6294282D1D387503001BD4E9 /* ⌘eikanaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +515,7 @@
 				INFOPLIST_FILE = "cmd-eikana/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.imasanari.cmd-eikana";
-				PRODUCT_NAME = "⌘英かな";
+				PRODUCT_NAME = "⌘eikana";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -528,7 +528,7 @@
 				INFOPLIST_FILE = "cmd-eikana/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.imasanari.cmd-eikana";
-				PRODUCT_NAME = "⌘英かな";
+				PRODUCT_NAME = "⌘eikana";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		629428121D387503001BD4E9 /* Build configuration list for PBXProject "⌘英かな" */ = {
+		629428121D387503001BD4E9 /* Build configuration list for PBXProject "⌘eikana" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6294282F1D387503001BD4E9 /* Debug */,

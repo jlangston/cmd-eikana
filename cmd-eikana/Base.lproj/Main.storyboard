@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="⌘英かな" id="1Xt-HY-uBw">
+                            <menuItem title="⌘eikana" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="⌘英かな" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="⌘eikana" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About ⌘英かな" id="5kV-Vb-QxS">
+                                        <menuItem title="About cmd-eikana" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide ⌘英かな" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide cmd-eikana" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit ⌘英かな" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit cmd-eikana" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -629,7 +629,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="⌘英かな Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="cmd-eikana Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -643,7 +643,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="_英かな" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="_eikana" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -651,7 +651,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="Preference" id="B8D-0N-5wS" customClass="PreferenceWindowController" customModule="_英かな" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Preference" id="B8D-0N-5wS" customClass="PreferenceWindowController" customModule="_eikana" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -666,10 +666,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--⌘英かな-->
+        <!--cmd-eikana-->
         <scene sceneID="GQH-Fe-u4t">
             <objects>
-                <tabViewController title="⌘英かな" storyboardIdentifier="Shortcuts" selectedTabViewItemIndex="0" id="xjl-OD-0Sx" sceneMemberID="viewController">
+                <tabViewController title="cmd-eikana" storyboardIdentifier="Shortcuts" selectedTabViewItemIndex="0" id="xjl-OD-0Sx" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" id="Y8j-NZ-0cv"/>
                         <tabViewItem id="9Ve-hc-1Mr"/>
@@ -694,7 +694,7 @@
         <!--Key Remap-->
         <scene sceneID="zoN-we-4m7">
             <objects>
-                <viewController title="Key Remap" id="14e-rg-kjk" customClass="ShortcutsController" customModule="_英かな" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Key Remap" id="14e-rg-kjk" customClass="ShortcutsController" customModule="_eikana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="qrE-lf-lrS">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -770,7 +770,7 @@
                                                             <rect key="frame" x="24" y="1" width="150" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4F-zN-XKq" customClass="KeyTextField" customModule="_英かな" customModuleProvider="target">
+                                                                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4F-zN-XKq" customClass="KeyTextField" customModule="_eikana" customModuleProvider="target">
                                                                     <rect key="frame" x="3" y="-5" width="147" height="26"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="Command_R" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="qIB-xs-Dfg">
@@ -805,7 +805,7 @@
                                                             <rect key="frame" x="177" y="1" width="150" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eU8-3g-mgj" customClass="KeyTextField" customModule="_英かな" customModuleProvider="target">
+                                                                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eU8-3g-mgj" customClass="KeyTextField" customModule="_eikana" customModuleProvider="target">
                                                                     <rect key="frame" x="3" y="-5" width="147" height="26"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="Eisuu" buttonBordered="NO" completes="NO" numberOfVisibleItems="6" id="f2N-dm-xIa">
@@ -843,25 +843,25 @@
                                                             <rect key="frame" x="330" y="1" width="76" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <popUpButton identifier="hage" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzf-C4-fIi" customClass="MappingMenu" customModule="_英かな" customModuleProvider="target">
+                                                                <popUpButton identifier="hage" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzf-C4-fIi" customClass="MappingMenu" customModule="_eikana" customModuleProvider="target">
                                                                     <rect key="frame" x="2" y="-2" width="71" height="21"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <popUpButtonCell key="cell" type="bevel" title="menu" bezelStyle="regularSquare" image="123CB2CA-81C4-4358-BF42-CE3E54EA0803" imagePosition="left" alignment="center" lineBreakMode="truncatingTail" state="on" identifier="test" inset="2" pullsDown="YES" id="H2F-I4-Cda">
+                                                                    <popUpButtonCell key="cell" type="bevel" title="menu" bezelStyle="regularSquare" image="30DD56EF-F711-4EF9-A4DE-D42AFB1A2D7E" imagePosition="left" alignment="center" lineBreakMode="truncatingTail" state="on" identifier="test" inset="2" pullsDown="YES" id="H2F-I4-Cda">
                                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                         <font key="font" metaFont="menu"/>
                                                                         <menu key="menu" id="BOb-Li-1q3">
                                                                             <items>
                                                                                 <menuItem title="menu" state="on" hidden="YES" id="hM9-HT-fqx"/>
-                                                                                <menuItem title="最上部に移動" id="SPl-n7-KTj">
+                                                                                <menuItem title="Move to Top" id="SPl-n7-KTj">
                                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                                 </menuItem>
-                                                                                <menuItem title="1つ上に移動" id="5K6-xN-Jic"/>
-                                                                                <menuItem title="1つ下に移動" id="fY1-dw-1o1"/>
-                                                                                <menuItem title="最下部に移動" id="EUh-qz-H2g">
+                                                                                <menuItem title="Move up one" id="5K6-xN-Jic"/>
+                                                                                <menuItem title="Move one down" id="fY1-dw-1o1"/>
+                                                                                <menuItem title="Move to bottom" id="EUh-qz-H2g">
                                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                                 </menuItem>
                                                                                 <menuItem isSeparatorItem="YES" id="VSb-Dd-g0X"/>
-                                                                                <menuItem title="この項目を削除" id="502-f2-l6k">
+                                                                                <menuItem title="Delete this item" id="502-f2-l6k">
                                                                                     <modifierMask key="keyEquivalentModifierMask"/>
                                                                                 </menuItem>
                                                                             </items>
@@ -896,9 +896,9 @@
                                 </tableHeaderView>
                             </scrollView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njp-cJ-inK">
-                                <rect key="frame" x="14" y="11" width="123" height="32"/>
+                                <rect key="frame" x="11" y="11" width="129" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Quit ⌘英かな" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="heb-5j-piH">
+                                <buttonCell key="cell" type="push" title="Quit ⌘eikana" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="heb-5j-piH">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name=".LucidaGrandeUI"/>
                                 </buttonCell>
@@ -919,15 +919,15 @@
         <!--Exclusion Apps-->
         <scene sceneID="LvT-Vt-OhG">
             <objects>
-                <viewController title="Exclusion Apps" id="5BL-ga-t3Q" customClass="ExclusionAppsController" customModule="_英かな" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Exclusion Apps" id="5BL-ga-t3Q" customClass="ExclusionAppsController" customModule="_eikana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4p9-Mr-Acm">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-22-ULP">
-                                <rect key="frame" x="18" y="233" width="425" height="17"/>
+                                <rect key="frame" x="18" y="233" width="487" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="除外アプリ設定（チェックのあるアプリではリマップが無効になります）" id="Y1I-k0-J1y">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Excluded application settings (remapping will be invalid for checked applications)" id="Y1I-k0-J1y">
                                     <font key="font" size="13" name=".HiraKakuInterface-W3"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1020,7 +1020,7 @@
         <!--Setting-->
         <scene sceneID="KoO-De-Y0S">
             <objects>
-                <viewController title="Setting" id="uYA-LV-zsC" customClass="ViewController" customModule="_英かな" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Setting" id="uYA-LV-zsC" customClass="ViewController" customModule="_eikana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="DC7-4p-YOW">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1028,7 +1028,7 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcU-gG-BmS">
                                 <rect key="frame" x="18" y="234" width="215" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="メニューバーにアイコンを表示" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Swa-9Q-bjA">
+                                <buttonCell key="cell" type="check" title="Display icon in menu bar" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Swa-9Q-bjA">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" size="13" name=".HiraKakuInterface-W3"/>
                                 </buttonCell>
@@ -1037,9 +1037,9 @@
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6E-DH-qqL">
-                                <rect key="frame" x="18" y="214" width="215" height="18"/>
+                                <rect key="frame" x="18" y="214" width="225" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="ログイン後にこのアプリを起動" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="UJa-91-PJq">
+                                <buttonCell key="cell" type="check" title="Launch this application after login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="UJa-91-PJq">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" size="13" name=".HiraKakuInterface-W3"/>
                                 </buttonCell>
@@ -1050,7 +1050,7 @@
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNT-SJ-fye">
                                 <rect key="frame" x="18" y="194" width="215" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="起動時にアップデートを確認" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6Pk-W2-evg">
+                                <buttonCell key="cell" type="check" title="Confirm update at startup" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6Pk-W2-evg">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" size="13" name=".HiraKakuInterface-W3"/>
                                 </buttonCell>
@@ -1059,9 +1059,9 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jqL-vq-Vub">
-                                <rect key="frame" x="347" y="185" width="89" height="32"/>
+                                <rect key="frame" x="353" y="185" width="78" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="確認する" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4Dh-kS-y64">
+                                <buttonCell key="cell" type="push" title="Check" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4Dh-kS-y64">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name=".HiraKakuInterface-W3"/>
                                 </buttonCell>
@@ -1085,7 +1085,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="123CB2CA-81C4-4358-BF42-CE3E54EA0803" width="1" height="1">
+        <image name="30DD56EF-F711-4EF9-A4DE-D42AFB1A2D7E" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

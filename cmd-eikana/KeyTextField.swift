@@ -34,22 +34,27 @@ class KeyTextField: NSComboBox {
         super.textDidEndEditing(obj)
         
         switch self.stringValue {
-        case "英数":
+        // case "英数":
+        case "Alphabet":
             shortcut = KeyboardShortcut(keyCode: 102)
             break
-        case "かな":
+        // case "かな":
+        case "Wonder":
             shortcut = KeyboardShortcut(keyCode: 104)
             break
-        case "⇧かな":
+        // case "⇧かな":
+        case "⇧ Wonder":
             shortcut = KeyboardShortcut(keyCode: 104, flags: CGEventFlags.maskShift)
             break
-        case "前の入力ソースを選択":
+        // case "前の入力ソースを選択":
+        case "Select previous input source":
             let symbolichotkeys = UserDefaults.init(suiteName: "com.apple.symbolichotkeys.plist")?.object(forKey: "AppleSymbolicHotKeys") as! NSDictionary
             let parameters = symbolichotkeys.value(forKeyPath: "60.value.parameters") as! [Int]
             
             shortcut = KeyboardShortcut(keyCode: CGKeyCode(parameters[1]), flags: CGEventFlags(rawValue: UInt64(parameters[2])))
             break
-        case "入力メニューの次のソースを選択":
+        // case "入力メニューの次のソースを選択":
+        case "Select the next source in the input menu":
             let symbolichotkeys = UserDefaults.init(suiteName: "com.apple.symbolichotkeys.plist")?.object(forKey: "AppleSymbolicHotKeys") as! NSDictionary
             let parameters = symbolichotkeys.value(forKeyPath: "61.value.parameters") as! [Int]
             
